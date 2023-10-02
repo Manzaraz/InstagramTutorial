@@ -17,14 +17,14 @@ struct UserModel: Identifiable {
     static func getUsers() -> [UserModel] {
         return [
             .init(username: "MichaelJSON", profilePicture: "person-1", city: "Tokio, Japan", isVerified: true),
-            .init(username: "pablo323", profilePicture: "person-2", city: "Caracas, Venezuela", isVerified: false),
+            .init(username: "pao323", profilePicture: "person-2", city: "Caracas, Venezuela", isVerified: false),
             .init(username: "joshua_1", profilePicture: "person-3", city: "Miami, US", isVerified: false),
             .init(username: "themoon", profilePicture: "person-4", city: "London, UK", isVerified: true),
             .init(username: "hero_232", profilePicture: "person-5", city: "Montreal, Canada", isVerified: true),
             .init(username: "theworld_2", profilePicture: "person-6", city: "New York, US", isVerified: false),
             .init(username: "doggg", profilePicture: "person-7", city: "Beijing, China", isVerified: false),
             .init(username: "someone", profilePicture: "person-8", city: "Rome, Italy", isVerified: true),
-            .init(username: "chrismanzi.dev", profilePicture: "chrismanzi.dev", city: "Tucuman, Argentina", isVerified: true)
+            .init(username: "chrisManzi.dev", profilePicture: "chrismanzi.dev", city: "Tucuman, Argentina", isVerified: true)
         ]
     }
 }
