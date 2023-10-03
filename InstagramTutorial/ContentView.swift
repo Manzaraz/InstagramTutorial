@@ -8,7 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    @ObservedObject private var viewModel = ViewModel()
+    private var viewModel = ViewModel()
+    
+    init() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor(named: "tabBar-bg")
+        
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
     
     var body: some View {
         NavigationStack {
@@ -20,7 +30,7 @@ struct ContentView: View {
                 
                 ScrollView {
                     VStack {
-                       storyList
+                        storyList
                         Divider()
                             .overlay( Color("primary"))
                             .frame(height: 1)
@@ -29,6 +39,8 @@ struct ContentView: View {
                         ForEach(viewModel.timelineList) { timeline in
                             TimelineView(timeline: timeline)
                         }
+                        
+                        Color.clear.padding(.bottom, 30) // para crear un espacio así no se me superponga con el tabView al llegar al final del storyList
                     }
                     .toolbar {
                         self.toolbarView()
@@ -47,8 +59,8 @@ struct ContentView: View {
                     StoryView(story: story)
                 }
             }
-            .padding(.leading, 20)
-            .padding(.vertical, 8)
+            .padding(.leading, 10)
+            .padding(.vertical, 10)
         }
     }
     

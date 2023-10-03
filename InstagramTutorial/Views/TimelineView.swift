@@ -33,7 +33,7 @@ struct TimelineView: View {
     
     var likedSection: some View {
         HStack {
-            Image(UserModel.getUsers()[1].profilePicture)
+            Image(UserModel.getUsers().randomElement()!.profilePicture)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 17, height: 17)
@@ -112,6 +112,8 @@ struct TimelineView: View {
             
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
                 Image("more-icon")
+                    .renderingMode(.template)
+                    .foregroundStyle(Color("primary1"))
             }
             
         }
