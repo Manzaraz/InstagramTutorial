@@ -15,6 +15,7 @@
 		618F9E732AC9319F009940C7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618F9E722AC9319F009940C7 /* ViewModel.swift */; };
 		61A411832ACA28E4007B2B7F /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A411822ACA28E4007B2B7F /* StoryView.swift */; };
 		61A411852ACA43F1007B2B7F /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A411842ACA43F1007B2B7F /* TimelineView.swift */; };
+		61FEEC1F2ACBCD0200694201 /* TabViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FEEC1E2ACBCD0200694201 /* TabViewCustom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		618F9E722AC9319F009940C7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		61A411822ACA28E4007B2B7F /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		61A411842ACA43F1007B2B7F /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		61FEEC1E2ACBCD0200694201 /* TabViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewCustom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				61A411822ACA28E4007B2B7F /* StoryView.swift */,
+				61FEEC1E2ACBCD0200694201 /* TabViewCustom.swift */,
 				61A411842ACA43F1007B2B7F /* TimelineView.swift */,
 			);
 			path = Views;
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61A411832ACA28E4007B2B7F /* StoryView.swift in Sources */,
+				61FEEC1F2ACBCD0200694201 /* TabViewCustom.swift in Sources */,
 				61A411852ACA43F1007B2B7F /* TimelineView.swift in Sources */,
 				6108A4342AC912EB00A4AC16 /* ContentView.swift in Sources */,
 				618F9E702AC92B2D009940C7 /* UserModel.swift in Sources */,
